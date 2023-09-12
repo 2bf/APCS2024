@@ -75,17 +75,17 @@ public class FirstSort {
       String c = scanner.next();
 
       // Sorting the words in alphabetical order
-      if (a.compareTo(b) > 0) {
+      if (a.compareToIgnoreCase(b) > 0) {
          String z = a;
          a = b;
          b = z;
       }
-      if (b.compareTo(c) > 0) {
+      if (b.compareToIgnoreCase(c) > 0) {
          String z = b;
          b = c;
          c = z;
       }
-      if (a.compareTo(b) > 0) {
+      if (a.compareToIgnoreCase(b) > 0) {
          String z = a;
          a = b;
          b = z;
