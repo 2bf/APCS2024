@@ -7,22 +7,23 @@ AP Computer Science A - Weisswange Period 5
 Average.java
 **************************************************/
 
+//import packages
 import java.util.*;
 
 public class Average {
    public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in); //initialize scanner
       
-      //use scanner to get integers
-      System.out.print("Enter three numbers: ");
-      double a = scanner.nextDouble();
-      double b = scanner.nextDouble();
-      double c = scanner.nextDouble();
+      //use scanner to get integer inputs
+      System.out.print("Enter three integers: ");
+      int a = scanner.nextInt();
+      int b = scanner.nextInt();
+      int c = scanner.nextInt();
       
-      double avg = (a + b + c) / 3;
-      
-      
-      System.out.printf("The average of those numbers is: " + "%,.3f", avg); //format
+      double avg = (double) (a + b + c) / 3; //convert int to double by typecasting
+      double output = Math.round(avg * 1000.0) / 1000.0; //multiply by 1000, then round, then divide by 1000 to get 3 decimal places
+
+      System.out.println("The average of those numbers is: " + output); //send output to i/o
       
    }
 
