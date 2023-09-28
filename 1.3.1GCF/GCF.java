@@ -12,6 +12,10 @@ import java.util.*;
 public class GCF {
    public static int gcf(int a, int b) {
    
+      if (a == 0 || b == 0) { //check if a or b is zero
+         return -1;
+      }
+   
       int minNum = Math.min(a, b); //use math.max to get the higher number between a and b
       int g = 1; //gcf variable 
       
@@ -32,6 +36,7 @@ public class GCF {
       System.out.print("Enter second integer: ");
       int n2 = input.nextInt();
       
-      System.out.println("The GCF is: " + gcf(n1, n2));
+      if (gcf(n1, n2) == -1) {System.out.println("Error: both numbers inputted must be nonzero.");}
+         else {System.out.println("The GCF is: " + gcf(n1, n2));}
    }
 }
