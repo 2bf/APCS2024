@@ -5,10 +5,10 @@ Objective: To practice parsing ```String```s and getting a feel for the amount o
 What you need to do: Write and thoroughly test the following method:
 ```public static int parseTime(String timeStr)```
 
-This method should take a String representing the current time of day and return an int representing the number of minutes elapsed since midnight. For example, 3:17 PM would be represented by the number 917, since there are 917 minutes since midnight (15 hours * 60 minutes per hour = 900 minutes, plus 17 extra minutes). If the input is invalid, return -1.
+This method should take a ```String``` representing the current time of day and return an int representing the number of minutes elapsed since midnight. For example, 3:17 PM would be represented by the number 917, since there are 917 minutes since midnight (15 hours * 60 minutes per hour = 900 minutes, plus 17 extra minutes). If the input is invalid, return -1.
 
-The rules for what is considered a valid time String are as follows:
-- Each time String must consist of a time portion possibly followed by an (optional) AM/PM portion
+The rules for what is considered a valid time ```String``` are as follows:
+- Each time ```String``` must consist of a time portion possibly followed by an (optional) AM/PM portion
 - Per the time portion:
     - It must be either 3 or 4 digits, with or without a colon, but with no spaces between them. If the colon is present, it must appear immediately before the final two digits.
     - The first digit (3-digit version) or two digits (4-digit version) represent the hour, which must be between 1 and 12 (AM/PM clock) or between 0 and 23 (24-hour clock).
@@ -18,7 +18,7 @@ The rules for what is considered a valid time String are as follows:
     - It is completely case-insensitive.
     - There can be no space between the two letters
     - If omitted, it is assumed that a 24-hour clock is being used.
-- Any number of spaces at the beginning of the String, the end of the String, or between the time and AM/PM portions are permitted and are to be ignored.
+- Any number of spaces at the beginning of the ```String```, the end of the ```String```, or between the time and AM/PM portions are permitted and are to be ignored.
 - No space is required between the time and AM/PM portion.
 - Any additional characters beyond the time portion, AM/PM portion, and allowed spaces are not permitted.
 
