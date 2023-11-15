@@ -10,7 +10,8 @@ public static String[] rowStrings(char[][] characters)
 
 which concatenates the characters in each row of the array and returns an array of Strings, consisting of the rows of the original array. Let's go to an example. If this code appeared in a method (such as main):
 
-```char[][] letters = {
+```
+char[][] letters = {
     {'G','r','e','a','t'},
     {'W','h','i','t','e'},
     {'S','h','a','r','k'}
